@@ -1,0 +1,1113 @@
+{
+    "site_40": {
+        "42":{
+            "interfaces": {
+                "ethernet": {
+                    "eth0": {
+                        "address": "dhcp",
+                        "description": "MGMT",
+                        "vrf": "MGMT"
+                    },
+                    "eth1": {
+                        "address": "100.40.104.40/24",
+                        "description": "INET1",
+                        "vrf": "INET1"
+                    },
+                    "eth2": {
+                        "address": "10.40.104.40/24",
+                        "description": "INET1",
+                        "vrf": "INET2"
+                    },
+                    "eth3": {},
+                    "eth4": {
+                        "address": [
+                            "169.254.255.1/24",
+                            "172.16.40.1/24"
+                        ],
+                        "description": "CTRL",
+                        "vrf": "LAN"
+                    },
+                    "eth5": {},
+                    "eth6": {},
+                    "eth7": {
+                        "description": "HA",
+                        "vif": {
+                            "10": {
+                                "address": "169.254.255.11/29"
+                            },
+                            "100": {
+                                "address": "169.254.255.101/29",
+                                "vrf": "CTRL"
+                            }
+                        }
+                    },
+                    "eth8": {},
+                    "eth9": {}
+                },
+                "loopback": {
+                    "lo": {
+                        "address": "10.255.255.42/32"
+                    }
+                },
+                "virtual-ethernet": {
+                    "veth1001": {
+                        "address": "169.254.255.1/31",
+                        "description": "CTRL_INET1",
+                        "peer-name": "veth101",
+                        "vrf": "LAN"
+                    },
+                    "veth100111": {
+                        "address": "169.254.254.1/31",
+                        "description": "CTRL_TO_CONTROL",
+                        "peer-name": "veth111100",
+                        "vrf": "CTRL"
+                    },
+                    "veth1002": {
+                        "address": "169.254.255.3/31",
+                        "description": "CTRL_INET2",
+                        "peer-name": "veth102",
+                        "vrf": "LAN"
+                    },
+                    "veth101": {
+                        "address": "169.254.255.0/31",
+                        "description": "INET1",
+                        "peer-name": "veth1001",
+                        "vrf": "INET1"
+                    },
+                    "veth102": {
+                        "address": "169.254.255.2/31",
+                        "description": "INET2",
+                        "peer-name": "veth1002",
+                        "vrf": "INET2"
+                    },
+                    "veth111100": {
+                        "address": "169.254.254.0/31",
+                        "description": "CONTROL_TO_CTRL",
+                        "peer-name": "veth100111",
+                        "vrf": "LAN"
+                    }
+                },
+                "vti": {
+                    "vti1100": {
+                        "address": "169.254.42.1/31",
+                        "description": "CORE1_MGMT"
+                    },
+                    "vti1101": {
+                        "address": "169.254.42.3/31",
+                        "description": "CORE1_INET1"
+                    },
+                    "vti1102": {
+                        "address": "169.254.42.5/31",
+                        "description": "CORE1_INET2"
+                    },
+                    "vti1110140101": {
+                        "address": "169.254.140.9/31",
+                        "description": "12101_40101",
+                        "vrf": "CTRL"
+                    },
+                    "vti1110140102": {
+                        "address": "169.254.140.11/31",
+                        "description": "12101_40102",
+                        "vrf": "CTRL"
+                    },
+                    "vti1110240101": {
+                        "address": "169.254.140.13/31",
+                        "description": "12102_40101",
+                        "vrf": "CTRL"
+                    },
+                    "vti1110240102": {
+                        "address": "169.254.140.15/31",
+                        "description": "12102_40102",
+                        "vrf": "CTRL"
+                    },
+                    "vti1210140101": {
+                        "address": "169.254.140.1/31",
+                        "description": "12101_40101",
+                        "vrf": "CTRL"
+                    },
+                    "vti1210140102": {
+                        "address": "169.254.140.3/31",
+                        "description": "12101_40102",
+                        "vrf": "CTRL"
+                    },
+                    "vti1210240101": {
+                        "address": "169.254.140.5/31",
+                        "description": "12102_40101",
+                        "vrf": "CTRL"
+                    },
+                    "vti1210240102": {
+                        "address": "169.254.140.7/31",
+                        "description": "12102_40102",
+                        "vrf": "CTRL"
+                    },
+                    "vti2110140101": {
+                        "address": "169.254.240.9/31",
+                        "description": "22101_40101",
+                        "vrf": "CTRL"
+                    },
+                    "vti2110140102": {
+                        "address": "169.254.240.11/31",
+                        "description": "22101_40102",
+                        "vrf": "CTRL"
+                    },
+                    "vti2110240101": {
+                        "address": "169.254.240.13/31",
+                        "description": "22102_40101",
+                        "vrf": "CTRL"
+                    },
+                    "vti2110240102": {
+                        "address": "169.254.240.15/31",
+                        "description": "22102_40102",
+                        "vrf": "CTRL"
+                    },
+                    "vti2210140101": {
+                        "address": "169.254.240.1/31",
+                        "description": "22101_40101",
+                        "vrf": "CTRL"
+                    },
+                    "vti2210140102": {
+                        "address": "169.254.240.3/31",
+                        "description": "22101_40102",
+                        "vrf": "CTRL"
+                    },
+                    "vti2210240101": {
+                        "address": "169.254.240.5/31",
+                        "description": "22102_40101",
+                        "vrf": "CTRL"
+                    },
+                    "vti2210240102": {
+                        "address": "169.254.240.7/31",
+                        "description": "22102_40102",
+                        "vrf": "CTRL"
+                    }
+                }
+            },
+            "load-balancing": {
+                "wan": {
+                    "disable-source-nat": {},
+                    "flush-connections": {},
+                    "interface-health": {
+                        "eth1": {
+                            "failure-count": "1",
+                            "nexthop": "100.40.104.104",
+                            "success-count": "1",
+                            "test": {
+                                "10": {
+                                    "resp-time": "2",
+                                    "target": "7.7.7.7",
+                                    "ttl-limit": "1"
+                                }
+                            }
+                        },
+                        "eth2": {
+                            "failure-count": "1",
+                            "nexthop": "10.40.104.104",
+                            "success-count": "1",
+                            "test": {
+                                "10": {
+                                    "resp-time": "2",
+                                    "target": "7.7.7.7",
+                                    "ttl-limit": "1"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "nat": {
+                "source": {
+                    "rule": {
+                        "100": {
+                            "outbound-interface": "eth1",
+                            "translation": {
+                                "address": "masquerade"
+                            }
+                        },
+                        "200": {
+                            "outbound-interface": "eth2",
+                            "translation": {
+                                "address": "masquerade"
+                            }
+                        }
+                    }
+                }
+            },
+            "policy": {
+                "local-route": {
+                    "rule": {
+                        "10": {
+                            "destination": "10.2.99.99/32",
+                            "set": {
+                                "table": "199"
+                            }
+                        },
+                        "101": {
+                            "destination": [
+                                "100.10.101.11",
+                                "100.10.101.12",
+                                "100.20.102.21",
+                                "100.20.102.22",
+                                "200.10.101.11",
+                                "200.10.101.12",
+                                "200.20.102.21",
+                                "200.20.102.22",
+                                "100.30.103.30",
+                                "100.100.103.103"
+                            ],
+                            "set": {
+                                "table": "101"
+                            },
+                            "source": "100.40.104.0/24"
+                        },
+                        "102": {
+                            "destination": [
+                                "100.10.101.11",
+                                "100.10.101.12",
+                                "100.20.102.21",
+                                "100.20.102.22",
+                                "200.10.101.11",
+                                "200.10.101.12",
+                                "200.20.102.21",
+                                "200.20.102.22",
+                                "100.30.103.30",
+                                "100.100.103.103"
+                            ],
+                            "set": {
+                                "table": "102"
+                            },
+                            "source": "10.40.104.0/24"
+                        },
+                        "199": {
+                            "set": {
+                                "table": "199"
+                            },
+                            "source": "10.2.99.0/24"
+                        },
+                        "9": {
+                            "destination": "192.168.172.0/24",
+                            "set": {
+                                "table": "199"
+                            }
+                        }
+                    }
+                },
+                "prefix-list": {
+                    "CTRL_PREFIXES": {
+                        "rule": {
+                            "10": {
+                                "action": "permit",
+                                "prefix": "172.16.40.0/24"
+                            }
+                        }
+                    },
+                    "DEFAULT": {
+                        "rule": {
+                            "100": {
+                                "action": "permit",
+                                "prefix": "0.0.0.0/0"
+                            }
+                        }
+                    },
+                    "LAN_PREFIXES": {
+                        "rule": {
+                            "10": {
+                                "action": "permit",
+                                "prefix": "172.16.40.0/24"
+                            }
+                        }
+                    }
+                },
+                "route-map": {
+                    "DEFAULT_ROUTE": {
+                        "rule": {
+                            "100": {
+                                "action": "permit",
+                                "match": {
+                                    "ip": {
+                                        "address": {}
+                                    }
+                                },
+                                "set": {
+                                    "community": {
+                                        "add": "no-advertise"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "TO_SDWAN": {
+                        "rule": {
+                            "1000": {
+                                "action": "permit",
+                                "match": {
+                                    "ip": {
+                                        "address": {
+                                            "prefix-list": "LAN_PREFIXES"
+                                        }
+                                    }
+                                },
+                                "set": {
+                                    "tag": "40"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "protocols": {
+                "static": {
+                    "table": {
+                        "101": {
+                            "route": {
+                                "0.0.0.0/0": {
+                                    "next-hop": {
+                                        "100.40.104.104": {
+                                            "interface": "eth1",
+                                            "vrf": "INET1"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "102": {
+                            "route": {
+                                "0.0.0.0/0": {
+                                    "next-hop": {
+                                        "10.40.104.104": {
+                                            "interface": "eth2",
+                                            "vrf": "INET2"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "199": {
+                            "route": {
+                                "0.0.0.0/0": {
+                                    "next-hop": {
+                                        "10.2.100.99": {
+                                            "interface": "eth0",
+                                            "vrf": "MGMT"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "service": {
+                "lldp": {
+                    "interface": {
+                        "all": {}
+                    }
+                },
+                "ntp": {
+                    "allow-client": {
+                        "address": [
+                            "0.0.0.0/0",
+                            "::/0"
+                        ]
+                    },
+                    "server": {
+                        "time1.vyos.net": {},
+                        "time2.vyos.net": {},
+                        "time3.vyos.net": {}
+                    }
+                }
+            },
+            "system": {
+                "config-management": {
+                    "commit-archive": {
+                        "location": "ftp://delta:delta@192.168.172.2/"
+                    },
+                    "commit-revisions": "100"
+                },
+                "conntrack": {
+                    "modules": {
+                        "ftp": {},
+                        "h323": {},
+                        "nfs": {},
+                        "pptp": {},
+                        "sip": {},
+                        "sqlnet": {},
+                        "tftp": {}
+                    }
+                },
+                "console": {
+                    "device": {
+                        "ttyS0": {
+                            "speed": "115200"
+                        }
+                    }
+                },
+                "host-name": "R42",
+                "login": {
+                    "user": {
+                        "vyos": {
+                            "authentication": {
+                                "encrypted-password": "$6$.1DiOe4xnfvyZKLe$MU2FkKh/LDwalXemN6EbU8bSnVIDcKyulUcdAO25O83YATWjRG0//s2AfiBtvUTTt7ORRwGOSbONWgE0kePLI1",
+                                "plaintext-password": ""
+                            }
+                        }
+                    }
+                },
+                "name-server": "8.8.8.8",
+                "syslog": {
+                    "global": {
+                        "facility": {
+                            "all": {
+                                "level": "info"
+                            },
+                            "protocols": {
+                                "level": "debug"
+                            }
+                        }
+                    }
+                }
+            },
+            "vpn": {
+                "ipsec": {
+                    "authentication": {
+                        "psk": {
+                            "CTRL": {
+                                "id": "100",
+                                "secret": "FCBarca1988!"
+                            },
+                            "SDWAN": {
+                                "id": [
+                                    "11101",
+                                    "11102",
+                                    "12102",
+                                    "12101",
+                                    "22101",
+                                    "22102",
+                                    "21102",
+                                    "21101"
+                                ],
+                                "secret": "FCBarca1988!"
+                            }
+                        }
+                    },
+                    "esp-group": {
+                        "ESP_DEFAULT": {
+                            "lifetime": "3600",
+                            "mode": "tunnel",
+                            "pfs": "dh-group19",
+                            "proposal": {
+                                "10": {
+                                    "encryption": "aes256gcm128",
+                                    "hash": "sha256"
+                                }
+                            }
+                        }
+                    },
+                    "ike-group": {
+                        "IKEv2_DEFAULT": {
+                            "close-action": "restart",
+                            "dead-peer-detection": {
+                                "action": "restart",
+                                "interval": "2",
+                                "timeout": "10"
+                            },
+                            "disable-mobike": {},
+                            "key-exchange": "ikev2",
+                            "lifetime": "10800",
+                            "proposal": {
+                                "10": {
+                                    "dh-group": "19",
+                                    "encryption": "aes256gcm128",
+                                    "hash": "sha256"
+                                }
+                            }
+                        }
+                    },
+                    "interface": [
+                        "eth1",
+                        "eth2",
+                        "eth0"
+                    ],
+                    "options": {
+                        "disable-route-autoinstall": {}
+                    },
+                    "site-to-site": {
+                        "peer": {
+                            "11101_40101": {
+                                "authentication": {
+                                    "local-id": "40101",
+                                    "mode": "pre-shared-secret",
+                                    "remote-id": "11101"
+                                },
+                                "connection-type": "initiate",
+                                "force-udp-encapsulation": {},
+                                "ike-group": "IKEv2_DEFAULT",
+                                "local-address": "100.40.104.40",
+                                "remote-address": "100.10.101.11",
+                                "vti": {
+                                    "bind": "vti1110140101"
+                                }
+                            },
+                            "11101_40102": {
+                                "authentication": {
+                                    "local-id": "40102",
+                                    "mode": "pre-shared-secret",
+                                    "remote-id": "11101"
+                                },
+                                "connection-type": "initiate",
+                                "force-udp-encapsulation": {},
+                                "ike-group": "IKEv2_DEFAULT",
+                                "local-address": "10.40.104.40",
+                                "remote-address": "100.10.101.11",
+                                "vti": {
+                                    "bind": "vti1110140102"
+                                }
+                            },
+                            "11102_40101": {
+                                "authentication": {
+                                    "local-id": "40101",
+                                    "mode": "pre-shared-secret",
+                                    "remote-id": "11102"
+                                },
+                                "connection-type": "initiate",
+                                "force-udp-encapsulation": {},
+                                "ike-group": "IKEv2_DEFAULT",
+                                "local-address": "100.40.104.40",
+                                "remote-address": "200.10.101.11",
+                                "vti": {
+                                    "bind": "vti1110240101"
+                                }
+                            },
+                            "11102_40102": {
+                                "authentication": {
+                                    "local-id": "40102",
+                                    "mode": "pre-shared-secret",
+                                    "remote-id": "11102"
+                                },
+                                "connection-type": "initiate",
+                                "force-udp-encapsulation": {},
+                                "ike-group": "IKEv2_DEFAULT",
+                                "local-address": "10.40.104.40",
+                                "remote-address": "200.10.101.11",
+                                "vti": {
+                                    "bind": "vti1110240102"
+                                }
+                            },
+                            "12101_40101": {
+                                "authentication": {
+                                    "local-id": "40101",
+                                    "mode": "pre-shared-secret",
+                                    "remote-id": "12101"
+                                },
+                                "connection-type": "initiate",
+                                "force-udp-encapsulation": {},
+                                "ike-group": "IKEv2_DEFAULT",
+                                "local-address": "100.40.104.40",
+                                "remote-address": "100.10.101.12",
+                                "vti": {
+                                    "bind": "vti1210140101"
+                                }
+                            },
+                            "12101_40102": {
+                                "authentication": {
+                                    "local-id": "40102",
+                                    "mode": "pre-shared-secret",
+                                    "remote-id": "12101"
+                                },
+                                "connection-type": "initiate",
+                                "force-udp-encapsulation": {},
+                                "ike-group": "IKEv2_DEFAULT",
+                                "local-address": "10.40.104.40",
+                                "remote-address": "100.10.101.12",
+                                "vti": {
+                                    "bind": "vti1210140102"
+                                }
+                            },
+                            "12102_40101": {
+                                "authentication": {
+                                    "local-id": "40101",
+                                    "mode": "pre-shared-secret",
+                                    "remote-id": "12102"
+                                },
+                                "connection-type": "initiate",
+                                "force-udp-encapsulation": {},
+                                "ike-group": "IKEv2_DEFAULT",
+                                "local-address": "100.40.104.40",
+                                "remote-address": "200.10.101.12",
+                                "vti": {
+                                    "bind": "vti1210240101"
+                                }
+                            },
+                            "12102_40102": {
+                                "authentication": {
+                                    "local-id": "40102",
+                                    "mode": "pre-shared-secret",
+                                    "remote-id": "12102"
+                                },
+                                "connection-type": "initiate",
+                                "description": "12102_40102",
+                                "force-udp-encapsulation": {},
+                                "ike-group": "IKEv2_DEFAULT",
+                                "local-address": "10.40.104.40",
+                                "remote-address": "200.10.101.12",
+                                "vti": {
+                                    "bind": "vti1210240102"
+                                }
+                            },
+                            "21101_40101": {
+                                "authentication": {
+                                    "local-id": "40101",
+                                    "mode": "pre-shared-secret",
+                                    "remote-id": "21101"
+                                },
+                                "connection-type": "initiate",
+                                "disable": {},
+                                "force-udp-encapsulation": {},
+                                "ike-group": "IKEv2_DEFAULT",
+                                "local-address": "100.40.104.40",
+                                "remote-address": "100.20.102.21",
+                                "vti": {
+                                    "bind": "vti2110140101"
+                                }
+                            },
+                            "21101_40102": {
+                                "authentication": {
+                                    "local-id": "40102",
+                                    "mode": "pre-shared-secret",
+                                    "remote-id": "21101"
+                                },
+                                "connection-type": "initiate",
+                                "disable": {},
+                                "force-udp-encapsulation": {},
+                                "ike-group": "IKEv2_DEFAULT",
+                                "local-address": "10.40.104.40",
+                                "remote-address": "100.20.102.21",
+                                "vti": {
+                                    "bind": "vti2110140102"
+                                }
+                            },
+                            "21102_40101": {
+                                "authentication": {
+                                    "local-id": "40101",
+                                    "mode": "pre-shared-secret",
+                                    "remote-id": "21102"
+                                },
+                                "connection-type": "initiate",
+                                "disable": {},
+                                "force-udp-encapsulation": {},
+                                "ike-group": "IKEv2_DEFAULT",
+                                "local-address": "100.40.104.40",
+                                "remote-address": "200.20.102.21",
+                                "vti": {
+                                    "bind": "vti2110240101"
+                                }
+                            },
+                            "21102_40102": {
+                                "authentication": {
+                                    "local-id": "40102",
+                                    "mode": "pre-shared-secret",
+                                    "remote-id": "21102"
+                                },
+                                "connection-type": "initiate",
+                                "disable": {},
+                                "force-udp-encapsulation": {},
+                                "ike-group": "IKEv2_DEFAULT",
+                                "local-address": "10.40.104.40",
+                                "remote-address": "200.20.102.21",
+                                "vti": {
+                                    "bind": "vti2110240102"
+                                }
+                            },
+                            "22101_40101": {
+                                "authentication": {
+                                    "local-id": "40101",
+                                    "mode": "pre-shared-secret",
+                                    "remote-id": "22101"
+                                },
+                                "connection-type": "initiate",
+                                "disable": {},
+                                "force-udp-encapsulation": {},
+                                "ike-group": "IKEv2_DEFAULT",
+                                "local-address": "100.40.104.40",
+                                "remote-address": "100.20.102.22",
+                                "vti": {
+                                    "bind": "vti2210140101"
+                                }
+                            },
+                            "22101_40102": {
+                                "authentication": {
+                                    "local-id": "40102",
+                                    "mode": "pre-shared-secret",
+                                    "remote-id": "22101"
+                                },
+                                "connection-type": "initiate",
+                                "disable": {},
+                                "force-udp-encapsulation": {},
+                                "ike-group": "IKEv2_DEFAULT",
+                                "local-address": "10.40.104.40",
+                                "remote-address": "100.20.102.22",
+                                "vti": {
+                                    "bind": "vti2210140102"
+                                }
+                            },
+                            "22102_40101": {
+                                "authentication": {
+                                    "local-id": "40101",
+                                    "mode": "pre-shared-secret",
+                                    "remote-id": "22102"
+                                },
+                                "connection-type": "initiate",
+                                "disable": {},
+                                "force-udp-encapsulation": {},
+                                "ike-group": "IKEv2_DEFAULT",
+                                "local-address": "100.40.104.40",
+                                "remote-address": "200.20.102.22",
+                                "vti": {
+                                    "bind": "vti2210240101"
+                                }
+                            },
+                            "22102_40102": {
+                                "authentication": {
+                                    "local-id": "40102",
+                                    "mode": "pre-shared-secret",
+                                    "remote-id": "22102"
+                                },
+                                "connection-type": "initiate",
+                                "description": "22102_40102",
+                                "disable": {},
+                                "force-udp-encapsulation": {},
+                                "ike-group": "IKEv2_DEFAULT",
+                                "local-address": "10.40.104.40",
+                                "remote-address": "200.20.102.22",
+                                "vti": {
+                                    "bind": "vti2210240102"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "vrf": {
+                "bind-to-all": {},
+                "name": {
+                    "CTRL": {
+                        "protocols": {
+                            "bgp": {
+                                "address-family": {
+                                    "ipv4-unicast": {
+                                        "redistribute": {
+                                            "ospf": {}
+                                        }
+                                    }
+                                },
+                                "neighbor": {
+                                    "169.254.254.0": {
+                                        "address-family": {
+                                            "ipv4-unicast": {
+                                                "nexthop-self": {}
+                                            }
+                                        },
+                                        "remote-as": "65535"
+                                    }
+                                },
+                                "parameters": {
+                                    "router-id": "169.254.254.0"
+                                },
+                                "system-as": "65535"
+                            },
+                            "ospf": {
+                                "area": {
+                                    "100": {}
+                                },
+                                "interface": {
+                                    "vti1110140101": {
+                                        "area": "100",
+                                        "bfd": {
+                                            "profile": "DEFAULT"
+                                        },
+                                        "cost": "32800",
+                                        "network": "point-to-point"
+                                    },
+                                    "vti1110140102": {
+                                        "area": "100",
+                                        "bfd": {
+                                            "profile": "DEFAULT"
+                                        },
+                                        "cost": "32800",
+                                        "network": "point-to-point"
+                                    },
+                                    "vti1110240101": {
+                                        "area": "100",
+                                        "bfd": {
+                                            "profile": "DEFAULT"
+                                        },
+                                        "cost": "32800",
+                                        "network": "point-to-point"
+                                    },
+                                    "vti1110240102": {
+                                        "area": "100",
+                                        "bfd": {
+                                            "profile": "DEFAULT"
+                                        },
+                                        "cost": "32800",
+                                        "network": "point-to-point"
+                                    },
+                                    "vti1210140101": {
+                                        "area": "100",
+                                        "bfd": {
+                                            "profile": "DEFAULT"
+                                        },
+                                        "cost": "32800",
+                                        "network": "point-to-point"
+                                    },
+                                    "vti1210140102": {
+                                        "area": "100",
+                                        "bfd": {
+                                            "profile": "DEFAULT"
+                                        },
+                                        "cost": "32800",
+                                        "network": "point-to-point"
+                                    },
+                                    "vti1210240101": {
+                                        "area": "100",
+                                        "bfd": {
+                                            "profile": "DEFAULT"
+                                        },
+                                        "cost": "32800",
+                                        "network": "point-to-point"
+                                    },
+                                    "vti1210240102": {
+                                        "area": "100",
+                                        "bfd": {
+                                            "profile": "DEFAULT"
+                                        },
+                                        "cost": "32800",
+                                        "network": "point-to-point"
+                                    },
+                                    "vti2110140101": {
+                                        "area": "100",
+                                        "bfd": {
+                                            "profile": "DEFAULT"
+                                        },
+                                        "cost": "32800",
+                                        "network": "point-to-point"
+                                    },
+                                    "vti2110140102": {
+                                        "area": "100",
+                                        "bfd": {
+                                            "profile": "DEFAULT"
+                                        },
+                                        "cost": "32800",
+                                        "network": "point-to-point"
+                                    },
+                                    "vti2110240101": {
+                                        "area": "100",
+                                        "bfd": {
+                                            "profile": "DEFAULT"
+                                        },
+                                        "cost": "32800",
+                                        "network": "point-to-point"
+                                    },
+                                    "vti2110240102": {
+                                        "area": "100",
+                                        "bfd": {
+                                            "profile": "DEFAULT"
+                                        },
+                                        "cost": "32800",
+                                        "network": "point-to-point"
+                                    },
+                                    "vti2210140101": {
+                                        "area": "100",
+                                        "bfd": {
+                                            "profile": "DEFAULT"
+                                        },
+                                        "cost": "32800",
+                                        "network": "point-to-point"
+                                    },
+                                    "vti2210140102": {
+                                        "area": "100",
+                                        "bfd": {
+                                            "profile": "DEFAULT"
+                                        },
+                                        "cost": "32800",
+                                        "network": "point-to-point"
+                                    },
+                                    "vti2210240101": {
+                                        "area": "100",
+                                        "bfd": {
+                                            "profile": "DEFAULT"
+                                        },
+                                        "cost": "32800",
+                                        "network": "point-to-point"
+                                    },
+                                    "vti2210240102": {
+                                        "area": "100",
+                                        "bfd": {
+                                            "profile": "DEFAULT"
+                                        },
+                                        "cost": "32800",
+                                        "network": "point-to-point"
+                                    }
+                                },
+                                "parameters": {
+                                    "router-id": "10.0.0.40"
+                                },
+                                "redistribute": {
+                                    "bgp": {
+                                        "route-map": "TO_SDWAN"
+                                    }
+                                }
+                            }
+                        },
+                        "table": "100"
+                    },
+                    "INET1": {
+                        "protocols": {
+                            "bgp": {
+                                "neighbor": {
+                                    "169.254.255.1": {
+                                        "address-family": {
+                                            "ipv4-unicast": {
+                                                "default-originate": {
+                                                    "route-map": "DEFAULT_ROUTE"
+                                                },
+                                                "soft-reconfiguration": {
+                                                    "inbound": {}
+                                                }
+                                            }
+                                        },
+                                        "remote-as": "65535"
+                                    }
+                                },
+                                "system-as": "65533"
+                            },
+                            "static": {
+                                "route": {
+                                    "0.0.0.0/0": {
+                                        "next-hop": {
+                                            "100.40.104.104": {}
+                                        }
+                                    },
+                                    "172.16.40.0/24": {
+                                        "next-hop": {
+                                            "169.254.255.1": {}
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "table": "101"
+                    },
+                    "INET2": {
+                        "protocols": {
+                            "bgp": {
+                                "neighbor": {
+                                    "169.254.255.3": {
+                                        "address-family": {
+                                            "ipv4-unicast": {
+                                                "default-originate": {
+                                                    "route-map": "DEFAULT_ROUTE"
+                                                },
+                                                "soft-reconfiguration": {
+                                                    "inbound": {}
+                                                }
+                                            }
+                                        },
+                                        "remote-as": "65535"
+                                    }
+                                },
+                                "system-as": "65533"
+                            },
+                            "static": {
+                                "route": {
+                                    "0.0.0.0/0": {
+                                        "next-hop": {
+                                            "10.40.104.104": {}
+                                        }
+                                    },
+                                    "172.16.40.0/24": {
+                                        "next-hop": {
+                                            "169.254.255.3": {}
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "table": "102"
+                    },
+                    "LAN": {
+                        "protocols": {
+                            "bgp": {
+                                "address-family": {
+                                    "ipv4-unicast": {
+                                        "redistribute": {
+                                            "connected": {
+                                                "route-map": "TO_SDWAN"
+                                            }
+                                        }
+                                    }
+                                },
+                                "neighbor": {
+                                    "169.254.254.1": {
+                                        "address-family": {
+                                            "ipv4-unicast": {
+                                                "nexthop-self": {}
+                                            }
+                                        },
+                                        "remote-as": "65535",
+                                        "update-source": "veth111100"
+                                    },
+                                    "169.254.255.0": {
+                                        "address-family": {
+                                            "ipv4-unicast": {
+                                                "soft-reconfiguration": {
+                                                    "inbound": {}
+                                                }
+                                            }
+                                        },
+                                        "remote-as": "65533"
+                                    },
+                                    "169.254.255.2": {
+                                        "address-family": {
+                                            "ipv4-unicast": {
+                                                "soft-reconfiguration": {
+                                                    "inbound": {}
+                                                }
+                                            }
+                                        },
+                                        "remote-as": "65533"
+                                    }
+                                },
+                                "parameters": {
+                                    "bestpath": {
+                                        "as-path": {
+                                            "multipath-relax": {}
+                                        },
+                                        "peer-type": {
+                                            "multipath-relax": {}
+                                        }
+                                    },
+                                    "router-id": "169.254.254.1"
+                                },
+                                "system-as": "65535"
+                            }
+                        },
+                        "table": "111"
+                    },
+                    "MGMT": {
+                        "protocols": {
+                            "static": {
+                                "route": {
+                                    "10.255.255.41/32": {
+                                        "interface": {
+                                            "lo": {}
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "table": "199"
+                    }
+                }
+            }
+        }
+}
