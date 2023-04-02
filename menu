@@ -1,0 +1,39 @@
+Dashbord
+Manage
+    Site Group
+    Sites
+    Devices
+Remote Access
+    General Settings
+    Authentication
+        Users
+        User Groups
+        Gateways
+Profiles
+    Circuit Profiles
+    Underlay Profiles
+    Syslog Profiles
+    SNMP Profiles
+    IPFIX Profiles
+Objects
+    Addresses
+    Address Groups
+    Prefix Lists
+    Applications
+    Services
+    ULRs
+Policies 
+    Traffic Policy
+    Securoty Policy
+    NAT Policy
+    QoS Policy
+Templates
+    Hub Templates
+    Spoke Templates
+Administration
+    Certificates
+    Authentication
+        Local Users
+        External Users
+    Log Forwarding
+    IP Restrictions
