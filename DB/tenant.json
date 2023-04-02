@@ -1,0 +1,40 @@
+{
+    "tenantId": "1122331",
+    "clientId": "112233",
+    "clientName": "clien1",
+    "allowedIPs": ["0.0.0.0/0"],
+    "authenticationMethod": "saml",
+    "ssos": [
+        {
+            "ssoId": "112233",
+            "ssoName": "sso1",
+            "ssoType": "saml",
+            "ssoUrl": "https://sso1.com",
+            "ssoCert": "-----BEGIN CERTIFICATE-----\nMIIDBzCCAe+gAwIBAgIJAMZ1Z1Z1Z1Z1MA0GCSqGSIb3DQEBCwUAMIGUMQswCQYDVQQGEwJVUzELMAkGA1UECAwCQ0ExEDAOBgNVBAcMB1NlYXR0bGUxGDAWBgNVBAoMD1NlYXR0bGUgQ29tcGFueTEUMBIGA1UECwwLU1NPIENBIFJvb3QxGjAYBgNVBAMMEVNlYXR0bGUgU1NPIENBMB4XDTE4MDUyNjE4MzYwNloXDTI4MDUyMzE4MzYwNlowgZQxCzAJBgNVBAYTAlVTMQswCQYDVQQIDAJDQTEQMA4GA1UEBwwHU2VhdHRsZTEYMBYGA1UECgwPU2VhdHRsZSBDb21wYW55MRQwEgYDVQQLDAtTU08gQ0EgUm9vdDEaMBgGA1UEAwwRU2VhdHRsZSBTU08gQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw"
+        }],
+    "licenses":["license1","license2"],
+    "services":["service1","service2"],
+    "createdBy": "user1",
+    "createdDate": "2018-05-26T18:36:06.000Z",
+    "device_groups": [{
+        "deviceGroupId": "112233",
+        "deviceGroupName": "devicegroup1",
+        "deviceGroupDescription": "devicegroup1",
+        "deviceGroupType": "fullmesh",
+        "deviceGroupMembers": {
+            "hubs": ["11223322"],
+            "spokes": ["11223344", "11223355"]
+        }
+    },
+        {
+            "deviceGroupId": "112234",
+            "deviceGroupName": "devicegroup2",
+            "deviceGroupDescription": "devicegroup2",
+            "deviceGroupType": "hubspoke",
+            "deviceGroupMembers": {
+                "hubs": ["11223422"],
+                "spokes": ["11223444", "11223455"]
+            }
+        }
+    ]
+}
