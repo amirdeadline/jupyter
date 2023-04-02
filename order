@@ -1,0 +1,23 @@
+Tenant
+    DeviceGroup
+        sites
+            circuits
+            policies
+            devices
+                Interfaces
+                    underlay
+                    overlay
+                    loopback
+                    management
+                    lan
+                routing
+                    static routes
+                    bgps
+                        bgps peers
+                        bgp policies
+                        bgp as
+                    ospf
+                        networks
+                        Interfaces
+                        areas
+                        
