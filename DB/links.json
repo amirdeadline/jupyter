@@ -1,0 +1,39 @@
+[
+    {
+      "_id": {
+        "$oid": "6150fc8c16d9c6fcf23b3a84"
+      },
+      "subnet": "169.254.0.0/31",
+      "linkid": "link123",
+      "device1id": "6150fc8c16d9c6fcf23b3a84",
+      "device2id": "6150fc8c16d9c6fcf23b3a83",
+      "underlay1id": "6150fc8c16d9c6fef33b3a81",
+      "underlay2id": "6150fc8c16d9c6fcf23b3a82",
+      "linkcost": 100
+    },
+    {
+      "_id": {
+        "$oid": "6150fc8c16d9c6fcf23b3a85"
+      },
+      "subnet": "169.254.0.2/31",
+      "linkid": "link456",
+      "device1id": "6150fc8c16d9c6fcf23b3a84",
+      "device2id": "6150fc8c16d9c6fcf23b3a83",
+      "underlay1id": "6150fc8c16d9c6fef33b3a82",
+      "underlay2id": "6150fc8c16d9c6fcf23b3a82",
+      "linkcost": 150
+    },
+    {
+      "_id": {
+        "$oid": "6150fc8c16d9c6fcf23b3a86"
+      },
+      "subnet": "169.254.0.4/31",
+      "linkid": "link789",
+      "device1id": "6150fc8c16d9c6fcf23b3a84",
+      "device2id": "6150fc8c16d9c6fcf23b3a83",
+      "underlay1id": "6150fc8c16d9c6fef33b3a82",
+      "underlay2id": "6150fc8c16d9c6fcf23b3a81",
+      "linkcost": 200
+    }
+  ]
+  
